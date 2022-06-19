@@ -1,0 +1,668 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background-color: rgb(255, 166, 0);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.headerLogoText {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.headerLogo {
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.headerText {
+    font-size: 30px;
+    margin-left: 10px;
+    color: white;
+}
+
+.location {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.location:hover {
+    text-decoration: underline;
+    color: black;
+    font-size: 32px;
+}
+
+.germanyFlag {
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 100%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.menuButton {
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.pizza {
+    color: black;
+    text-decoration: none;
+}
+
+.pizza:hover {
+    color: rgb(112, 112, 112);
+    text-decoration: underline;
+}
+
+.headerTextLieferfleck {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.headerTextLieferfleck:hover {
+    text-decoration: underline;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/*######################################################################################################*/
+/*######################################################################################################*/
+
+/*Dark-Mode*/
+.dark-mode {
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+
+.darkModeImg {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.darkModeImg:hover {
+    border-radius: 100%;
+    background-color: gray;
+    cursor: pointer;
+}
+
+/*######################################################################################################*/
+/*######################################################################################################*/
+
+/* Einkaufswagen, Rechte seite.*/
+
+.bigContainer {
+    display: flex;
+}
+
+.foodHeader {
+    object-fit: cover;
+    max-height: 200px;
+    width: 100%;
+}
+
+.restoranteInfos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    object-fit: cover;
+    height: 100px;
+    width: 120px;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.info {
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+}
+
+.shoppingCart {
+    width: 30%;
+    height: 100vh;
+    background-color: rgba(245, 245, 245, 0.911);
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    box-shadow: -2px 0px 3px 0px rgba(118, 118, 118, 0.233);
+}
+
+.shoppingCart-header {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    color: rgb(71, 71, 71);
+    border-bottom: solid 0.2px rgba(133, 133, 133, 0.495);
+    background-color: rgba(245, 245, 245, 1);
+    z-index: 2;
+}
+
+.border-short {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 0.2px rgba(133, 133, 133, 0.495);
+    width: 90%;
+    position: relative;
+    left: 5%;
+    right: 5%;
+    margin-top: -4px;
+}
+
+/*######################################################################################################*/
+/*######################################################################################################*/
+
+.left-container {
+    width: 70%;
+    z-index: 0;
+}
+
+.main-pic {
+    background-image: url(img/foodHeader.jpg);
+    height: 280px;
+    background-size: cover;
+    background-position: center 37%;
+}
+
+.round-logo {
+    left: 35%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    border: 5px solid black;
+}
+
+.second-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -20px;
+}
+
+.h1-rating {
+    display: flex;
+    flex-direction: column;
+}
+
+.h1-class h1 {
+    padding-top: 12px;
+    margin-bottom: 0px;
+}
+
+.stars-rating {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.stars-rating:hover {
+    cursor: pointer;
+}
+
+.stars img {
+    height: 25px;
+}
+
+.rating {
+    text-decoration: underline;
+    color: #ffa200;
+    padding-left: 8px;
+}
+
+.info-heart {
+    display: flex;
+    border-right: solid 0.2px rgba(133, 133, 133, 0.623);
+    border-top: solid 0.2px rgba(133, 133, 133, 0.623);
+    border-bottom: solid 0.2px rgba(133, 133, 133, 0.623);
+}
+
+.info-heart img {
+    display: flex;
+    width: 22px;
+    padding: 10px;
+    border-left: solid 0.2px rgba(133, 133, 133, 0.623);
+}
+
+.info-heart img:hover {
+    cursor: pointer;
+}
+
+.choosing-bar {
+    background-color: rgba(232, 232, 232, 0.911);
+    color: rgba(71, 71, 71, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+    margin-top: -20px;
+    font-size: 14px;
+    overflow-x: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid rgb(234, 234, 234);
+    border-radius: 4px;
+    padding: 12px;
+    padding-right: 32px;
+    margin-bottom: 12px;
+}
+
+.choosing-bar :first-child {
+    padding-left: 16px;
+}
+
+.choosing-bar span {
+    margin-left: 55px;
+    white-space: nowrap;
+}
+
+.choosing-bar span:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.choosing-bar::-webkit-scrollbar {
+    width: 0;
+}
+
+.choosing-bar::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.choosing-bar::-webkit-scrollbar-thumb {
+    background-color: #d6dee1;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+}
+
+.choosing-bar::-webkit-scrollbar-thumb:hover {
+    background-color: #bcbcbcad;
+}
+
+.choosing-bar span:hover {
+    cursor: pointer;
+}
+
+.choosing-bar img {
+    padding-top: 2px;
+    height: 20px;
+}
+
+.choosing-bar img:hover {
+    cursor: pointer;
+}
+
+
+/*######################################################################################################*/
+/*######################################################################################################*/
+
+.plusIcon {
+    height: 20px;
+    width: 20px;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.menuSelection {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gray {
+    background-color: gray;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 2px solid gray;
+}
+
+.menuSelectionName {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-left: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menuSettings {
+    border: 2px solid gray;
+    height: 140px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+}
+
+.menuSettings img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h3 {
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 1000;
+    font-size: 25px;
+}
+
+.spaceBetween {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.spanMenu {
+    margin-left: 10px;
+    font-size: 20px;
+    color: red;
+    font-style: oblique;
+    font-weight: 900;
+}
+
+p {
+    margin-left: 10px;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+
+/*######################################################################################################*/
+/*######################################################################################################*/
+
+.d-none {
+    display: none;
+}
+
+.emptyBasket {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.basketImg {
+    margin-top: 30px;
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+}
+
+.basketDiv {
+    margin-top: 10px;
+    box-shadow: 0px 12px 8px 1px #646464;
+}
+
+.basketMenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.basketMenuName {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 1%;
+}
+
+.basketMenuDiscription {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 1%;
+}
+
+.basketMenuPrive {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 1%;
+}
+
+.basketSummeDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.basketPayButtonDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.payButtonInBasket {
+    margin-bottom: 80px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.payButtonInBasket:hover {
+    border: 4px solid black;
+    border-radius: 10px;
+    background-color: orange;
+    font-size: 28px;
+}
+
+.basketSumme {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    font-weight: 550;
+    padding: 1%;
+}
+
+.basketSummeText {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 1%;
+}
+
+.basketSeparator {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 500;
+}
+
+.basketSummeDeliveryCosts {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 1%;
+}
+
+.basketAmounts {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 1%;
+}
+
+.margin {
+    margin-right: 5px;
+}
+
+.deletMenu {
+    object-fit: contain;
+    height: 25px;
+    width: 25px;
+    padding: 1%;
+    display: flex;
+}
+
+.deletMenu:hover {
+    background-color: red;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+
+.closeBasket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: rgba(139, 0, 0, 0.336);
+    border: 2px solid rgba(0, 0, 0, 0.281);
+}
+
+.closeBasket:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+
+/*######################################################################################################*/
+/*######################################################################################################*/
+
+.fooder, .fooder1, .fooder2, .fooder3 {
+    height: 200px;
+    background-color: gray;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fooderDiv1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.fooderDiv1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.fooderDiv1 a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+.fooderLogo {
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.fooderLogo:hover {
+    cursor: pointer;
+    border-radius: 100%;
+    border: 2px solid black;
+    width: 130px;
+    height: 130px;
+}
+
+.impressum {
+    height: 100vh;
+    margin: 5%;
+}
+
+.datenschutz {
+    margin: 5%;
+}
+
+
+/*######################################################################################################*/
+/*######################################################################################################*/
+
+
+.openingHoursDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.locationMap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.openingHoursGrayDiv {
+    background-color: rgb(204, 204, 204);
+    width: 400px;
+    height: 350px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.openingHoursText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.openingHoursH1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferfleg</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js"></script>
+
+</head>
+
+<!-- #################################################### -->
+<!-- #################################################### -->
+
+
+<body onload="render()">
+
+    <!-- Header bereich -->
+
+    <div class="header" id="header">
+        <div class="headerLogoText">
+            <img src="img/headerLogo.png" class="headerLogo" title="logo">
+            <p class="headerText" title="LIEFERFLECK"><a href="index.html" class="headerTextLieferfleck">LIEFERFLECK</a></p>
+        </div>
+        <div>
+            <a href="https://goo.gl/maps/sCA5EpwAxwkDc92f9" target=”_blank” class="location"> 57072 Siegen </a>
+        </div>
+        <div class="media1200">
+            <img src="img/germany.png" class="germanyFlag" onclick="comingSoon()">
+            <img src="img/menu.png" class="menuButton" onclick="comingSoon()">
+            <img src="img/darkMode.png" onclick="darkMode(), inProgressBeta()" class="darkModeImg">
+        </div>
+    </div>
+
+    <!-- #################################################### -->
+    <!-- #################################################### -->
+
+
+    <!-- Info bereich -->
+
+    <div class="bigContainer">
+        <div class="left-container" onclick="responsiveBasketRemove()">
+            <div class="main-pic"></div>
+            <div class="round-logo"><img src="./img/logo.png"></div>
+            <div class="second-header">
+                <div class="h1-rating">
+                    <div class="h1-class">
+                        <h1>Pizza Resturante</h1>
+                        <div class="stars-rating">
+                            <div class="stars" onclick="comingSoon()"><img src="./img/bewertung.png"></div>
+                            <div class="rating" onclick="comingSoon()"> (45 Bewertungen)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-heart">
+                    <div class="info"><a href="info.html" target="_blank"><img src="img/info.png"></a>
+                    </div>
+                    <div class="heart" onclick="changeImage(tag)"><img src="img/noLike.png" id="tag">
+                    </div>
+                </div>
+            </div>
+
+            <!-- #################################################### -->
+            <!-- #################################################### -->
+
+
+            <!-- Menü auswahl -->
+
+            <div class="choosing-bar">
+                <div><img src="./img/loupe.png" onclick="comingSoon()"></div>
+                <span><a class="pizza"
+                        href="#pizza">Pizza</a></span><span>Pommes</span><span>Salat</span><span>Getränke</span><span>Bier</span>
+            </div>
+
+            <div class="menu">
+                <div class="gray">
+                    <img src="img/Pizza.jpg" title="Pizza" id="pizza" class="menuSelection">
+                    <span class="menuSelectionName">Pizza</span>
+                </div>
+
+                <div id="myMenu">
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- #################################################### -->
+        <!-- #################################################### -->
+
+
+        <!-- Einkaufswagen -->
+
+        <div class="shoppingCartDNone shoppingCart" id="d-noneResponsive">
+            <div class="shoppingCart-header" class="border-short">
+                <h2 id="basketAmountNumber">Warenkorb</h2>
+            </div>
+            <div class="closeBasketDiv"><button onclick="responsiveBasketRemove()" class="closeBasket">Warenkorb Schlissen</button></div>
+
+            <!-- #################################################### -->
+            <!-- #################################################### -->
+
+            <!-- Input meals-->
+
+            <div id="basketMenu" class="basketMenu">
+            </div>
+
+            <div id="cart" class="emptyBasket">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="basketMenuResponsive" class="responsiveBasketMenu" onclick="responsiveBasket()">
+        <span class="responsiveBasketText">Warenkorb</span>
+    </div>
+
+
+    <!-- #################################################### -->
+    <!-- #################################################### -->
+
+
+    <!-- Fooder-->
+
+    <div class="fooder">
+        <div class="fooderDiv1">
+            <a href="impressum.html" target="_blank">Impressum</a>
+            <br>
+            <a href="datenschutz.html" target="_blank">Datenschutz</a>
+        </div>
+        <div class="fooderDiv2">
+            <a href="#header"><img src="img/headerLogo.png" class="fooderLogo"></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

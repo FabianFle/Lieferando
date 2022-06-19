@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferfleck - Infobereich</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <!-- Header bereich -->
+
+    <div class="header" id="header">
+        <div class="headerLogoText">
+            <img src="img/headerLogo.png" class="headerLogo" title="logo">
+            <p class="headerText"><a href="index.html" class="headerTextLieferfleck">LIEFERFLECK</a></p>
+        </div>
+        <div>
+            <a href="https://goo.gl/maps/sCA5EpwAxwkDc92f9" target=”_blank” class="location"> 57072 Siegen </a>
+        </div>
+        <div class="media1200">
+            <img src="img/germany.png" class="germanyFlag" onclick="comingSoon()">
+            <img src="img/menu.png" class="menuButton" onclick="comingSoon()">
+            <img src="img/darkMode.png" onclick="darkMode(), inProgressBeta()" class="darkModeImg">
+        </div>
+    </div>
+
+
+    <div class="openingHoursDiv">
+
+        <div>
+            <iframe class="locationMap"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40276.70148631861!2d7.992110449999999!3d50.88127165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bc1ce1e8ff1c73%3A0x1c2760ffab259f00!2s57072%20Siegen!5e0!3m2!1sde!2sde!4v1653585989284!5m2!1sde!2sde"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="openingHoursGrayDiv">
+            <h1 class="openingHoursH1">Öffnungszeiten</h1>
+
+            <div>
+                <span class="openingHoursText">DI = 12:00 - 23:00 Uhr</span><br>
+                <span class="openingHoursText">MI = 12:00 - 22:00 Uhr</span><br>
+                <span class="openingHoursText">DO = 12:00 - 23:00 Uhr</span><br>
+                <span class="openingHoursText">FR = 12:00 - 22:00 Uhr</span><br>
+                <span class="openingHoursText">SA = 12:00 - 23:00 Uhr</span><br>
+                <span class="openingHoursText">SO = 14:00 - 23:00 Uhr</span>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Fooder-->
+
+    <div class="fooder3">
+        <div class="fooderDiv1">
+            <a href="impressum.html" target="_blank">Impressum</a>
+            <br>
+            <a href="datenschutz.html" target="_blank">Datenschutz</a>
+        </div>
+        <div class="fooderDiv2">
+            <a href="#header"><img src="img/headerLogo.png" class="fooderLogo"></a>
+        </div>
+    </div>
+</body>
